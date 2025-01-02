@@ -3,13 +3,22 @@
 @tailwind utilities;
 
 body {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* Define media query for mobile devices */
-@media (max-width: 680px) {
+@media (max-width: 1040px) {
+  /* Set smaller font size for mobile */
+  body {
+      font-size: 16px;
+  }
+}
+
+/* Define media query for mobile devices */
+@media (max-width: 640px) {
   /* Set smaller font size for mobile */
   body {
       font-size: 12px;
   }
 }
+

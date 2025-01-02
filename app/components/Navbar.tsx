@@ -23,7 +23,7 @@ export default function Navbar() {
         <>
         <div className="flex flex-row min-w-fit p-8">
             <div className="flex w-1/4">
-                <p className="">larry<span className={styles.blinking}>_</span></p>
+                <p className="text-3xl">larry<span className={styles.blinking}>_</span></p>
             </div>
             <div className="flex ml-auto mr-0 w-3/4 justify-end">
                 <ul onMouseLeave={() => setHovered(undefined)}>
@@ -51,7 +51,7 @@ export default function Navbar() {
                         >
                         <a className="flex items-center justify-end mb-1" href="/resume.pdf" target="_blank" >
                         <p className=" pr-2">resume</p>
-                        <Image className="w-5 h-5" src="/resume.svg" alt="" /></a>
+                        <Image src="/resume.svg" alt="" width={24} height={24}/></a>
                     </li>
                 </ul>
             </div>
