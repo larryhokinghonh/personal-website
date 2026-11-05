@@ -4,6 +4,7 @@ import { Manrope } from "next/font/google";
 import ThemeToggle from "@/components/ThemeToggle";
 import AnimatedContent from "@/components/AnimatedContent";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -74,6 +75,7 @@ export default function RootLayout({
           </div>
           {children}
           <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
